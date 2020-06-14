@@ -8,10 +8,10 @@
  - Swagger
  - Spring REST Docs
 ## Swagger
-### 소개
-Swagger는 Java, NodeJs, Python 등 다양한 언어를 지원해준다. 
+###  소개
+Swagger는 간단한 설정으로 프Java, NodeJs, Python 등 다양한 언어를 지원해준다. 
 
-Spring 어노테이션 기반 REST API 문서 자동화**
+Spring 어노테이션 기반 REST API 문서 자동화
 - 대화형 API 콘솔 자동 생성
 - 소스코드 빌드시 문서 자동 생성
 ### 설치
@@ -32,10 +32,10 @@ Spring 어노테이션 기반 REST API 문서 자동화**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NDI3MDE5NCwxODg5MTk1NTgsLTE3Mj
-k5OTgyMiwtMTI3MjE0MTM1OSwzNTM4MTUwMTIsLTUxNDA5NTcw
-MCwxODQ1MDQxODg1LDY0OTI5MTQyNiwtMTQ4MDk4ODMyMCwtNj
-M5NTExMDk1LDY0NjcxMjQwOSwxODU1MjkxNTgsMTc1Mjc1Nzky
-NiwtMTc2NjcyMjg0OCw1MDc4OTc1NzcsNjk3MDI3NjIsLTQ4Mj
-c5NjkzMSwtNDc2MzI4NjE4XX0=
+eyJoaXN0b3J5IjpbLTE0MTY4OTIxOTcsMTg4OTE5NTU4LC0xNz
+I5OTk4MjIsLTEyNzIxNDEzNTksMzUzODE1MDEyLC01MTQwOTU3
+MDAsMTg0NTA0MTg4NSw2NDkyOTE0MjYsLTE0ODA5ODgzMjAsLT
+YzOTUxMTA5NSw2NDY3MTI0MDksMTg1NTI5MTU4LDE3NTI3NTc5
+MjYsLTE3NjY3MjI4NDgsNTA3ODk3NTc3LDY5NzAyNzYyLC00OD
+I3OTY5MzEsLTQ3NjMyODYxOF19
 -->
