@@ -8,22 +8,21 @@
 
 ## Swagger
 
-
 ### 설치
-
 ### Lerni 적용 예제
+
+## 다른 API 문서 자동화 도구
+
+### Spring REST Docs
 
 ## 끝맺음
 
 
 
-## Spring REST Docs
-
-
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MDYyMTQzMSw2NDY3MTI0MDksMTg1NT
+eyJoaXN0b3J5IjpbLTYzOTUxMTA5NSw2NDY3MTI0MDksMTg1NT
 I5MTU4LDE3NTI3NTc5MjYsLTE3NjY3MjI4NDgsNTA3ODk3NTc3
 LDY5NzAyNzYyLC00ODI3OTY5MzEsLTQ3NjMyODYxOF19
 -->
