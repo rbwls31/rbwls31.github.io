@@ -12,7 +12,6 @@
 Swagger는 간단한 설정으로 프로젝트에서 지정한 URL들을 HTML 화면으로 확인할 수 있게 해주는 프로젝트로, Java뿐만 아니라 NodeJs, Python 등 다양한 언어를 지원해준다. 
 
 ### 설치
-### 사용법(예제코드)
 ### Lerni 적용 예제
 
 ## Spring REST Docs
@@ -29,10 +28,10 @@ Swagger는 간단한 설정으로 프로젝트에서 지정한 URL들을 HTML �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NTkwMjgyMiwxODg5MTk1NTgsLTE3Mj
-k5OTgyMiwtMTI3MjE0MTM1OSwzNTM4MTUwMTIsLTUxNDA5NTcw
-MCwxODQ1MDQxODg1LDY0OTI5MTQyNiwtMTQ4MDk4ODMyMCwtNj
-M5NTExMDk1LDY0NjcxMjQwOSwxODU1MjkxNTgsMTc1Mjc1Nzky
-NiwtMTc2NjcyMjg0OCw1MDc4OTc1NzcsNjk3MDI3NjIsLTQ4Mj
-c5NjkzMSwtNDc2MzI4NjE4XX0=
+eyJoaXN0b3J5IjpbMTIwMDYzOTI0MCwtMzk1OTAyODIyLDE4OD
+kxOTU1OCwtMTcyOTk5ODIyLC0xMjcyMTQxMzU5LDM1MzgxNTAx
+MiwtNTE0MDk1NzAwLDE4NDUwNDE4ODUsNjQ5MjkxNDI2LC0xND
+gwOTg4MzIwLC02Mzk1MTEwOTUsNjQ2NzEyNDA5LDE4NTUyOTE1
+OCwxNzUyNzU3OTI2LC0xNzY2NzIyODQ4LDUwNzg5NzU3Nyw2OT
+cwMjc2MiwtNDgyNzk2OTMxLC00NzYzMjg2MThdfQ==
 -->
