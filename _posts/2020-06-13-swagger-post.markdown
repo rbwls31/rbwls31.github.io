@@ -6,16 +6,16 @@
 이런 구조로 처음 개발하거나 유지보수를 진행 중인 경우, 해당 API서버가 어떤 Spec을 가진 데이터를 주고 받는지에 대한 문서작업이 필요하다.
 예전에는 엑셀에 메소드 URI, 요청 파라미터, 응답 status code별 설명, 응답 body 등을 컬럼으로 두고 내용을 채웠었다.  하지만 이런 방식은 아래와 같은 문제가 있다.
 
- - 변경을 추적하기 어렵다.
+ - 변경이력 관리가 어렵다.
  - 
 
-### SWAGGER & Spring REST Docs
+### Swagger & Spring REST Docs
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1Mjc1NzkyNiwtMTc2NjcyMjg0OCw1MD
-c4OTc1NzcsNjk3MDI3NjIsLTQ4Mjc5NjkzMSwtNDc2MzI4NjE4
-XX0=
+eyJoaXN0b3J5IjpbMzAzMTk5Mzk0LDE3NTI3NTc5MjYsLTE3Nj
+Y3MjI4NDgsNTA3ODk3NTc3LDY5NzAyNzYyLC00ODI3OTY5MzEs
+LTQ3NjMyODYxOF19
 -->
