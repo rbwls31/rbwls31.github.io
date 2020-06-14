@@ -11,7 +11,7 @@
 ## Swagger
 ### 소개
 ### 설치
-### 예제코드
+### 사용법(예제코드)
 ### Lerni 적용 예제
 
 ## Spring REST Docs
@@ -28,9 +28,9 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNDA5NTcwMCwxODQ1MDQxODg1LDY0OT
-I5MTQyNiwtMTQ4MDk4ODMyMCwtNjM5NTExMDk1LDY0NjcxMjQw
-OSwxODU1MjkxNTgsMTc1Mjc1NzkyNiwtMTc2NjcyMjg0OCw1MD
-c4OTc1NzcsNjk3MDI3NjIsLTQ4Mjc5NjkzMSwtNDc2MzI4NjE4
-XX0=
+eyJoaXN0b3J5IjpbLTkzNTI2MTE2NywtNTE0MDk1NzAwLDE4ND
+UwNDE4ODUsNjQ5MjkxNDI2LC0xNDgwOTg4MzIwLC02Mzk1MTEw
+OTUsNjQ2NzEyNDA5LDE4NTUyOTE1OCwxNzUyNzU3OTI2LC0xNz
+Y2NzIyODQ4LDUwNzg5NzU3Nyw2OTcwMjc2MiwtNDgyNzk2OTMx
+LC00NzYzMjg2MThdfQ==
 -->
