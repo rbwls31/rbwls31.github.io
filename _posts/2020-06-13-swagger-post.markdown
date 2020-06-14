@@ -5,12 +5,12 @@
 
 이런 구조로 처음 개발하거나 유지보수를 진행 중인 경우, 해당 API서버가 어떤 Spec을 가진 데이터를 주고 받는지에 대한 문서작업이 필요하다.
 예전에는 엑셀에 메소드 URI, 요청 파라미터, 응답 status code별 설명, 응답 body 등을 컬럼으로 두고 내용을 채웠었다.  하지만 이런 방식은 굉장히 시간이 많이걸리고, 매번 기능이 추가되거나 변경될때마다 작업을 따로 해줘야 하는 것은 개발자 입장에서 너무 고통스러운 일이었다. 그러다보니 API Spec 문서를 자동화는 도구들이 나오게 되었다. 
-- Swagger
-- Spring REST Docs
+ - Swagger
+ - Spring REST Docs
 ## Swagger
+### 소개
 Swagger는 Java, NodeJs, Python 등 다양한 언어를 지원해준다. 
-
-Spring 어노테이션 기반 REST API 문서 자동화
+> Spring 어노테이션 기반 REST API 문서 자동화
 - 대화형 API 콘솔 자동 생성
 - 소스코드 빌드시 문서 자동 생성
 ### 설치
@@ -31,10 +31,10 @@ Spring 어노테이션 기반 REST API 문서 자동화
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNzExNzk1NywxODg5MTk1NTgsLTE3Mj
-k5OTgyMiwtMTI3MjE0MTM1OSwzNTM4MTUwMTIsLTUxNDA5NTcw
-MCwxODQ1MDQxODg1LDY0OTI5MTQyNiwtMTQ4MDk4ODMyMCwtNj
-M5NTExMDk1LDY0NjcxMjQwOSwxODU1MjkxNTgsMTc1Mjc1Nzky
-NiwtMTc2NjcyMjg0OCw1MDc4OTc1NzcsNjk3MDI3NjIsLTQ4Mj
-c5NjkzMSwtNDc2MzI4NjE4XX0=
+eyJoaXN0b3J5IjpbLTExOTU2MDM5MzQsMTg4OTE5NTU4LC0xNz
+I5OTk4MjIsLTEyNzIxNDEzNTksMzUzODE1MDEyLC01MTQwOTU3
+MDAsMTg0NTA0MTg4NSw2NDkyOTE0MjYsLTE0ODA5ODgzMjAsLT
+YzOTUxMTA5NSw2NDY3MTI0MDksMTg1NTI5MTU4LDE3NTI3NTc5
+MjYsLTE3NjY3MjI4NDgsNTA3ODk3NTc3LDY5NzAyNzYyLC00OD
+I3OTY5MzEsLTQ3NjMyODYxOF19
 -->
