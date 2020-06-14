@@ -9,7 +9,7 @@
 - Spring REST Docs
 
 ## Swagger
-Swagger는 NodeJs, Java, Python
+Swagger는 NodeJs, Java, Python 등 다양한 언어를 지원해준다. 
 ### 설치
 ### 사용법(예제코드)
 ### Lerni 적용 예제
@@ -28,9 +28,10 @@ Swagger는 NodeJs, Java, Python
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjk5OTgyMiwtMTI3MjE0MTM1OSwzNT
-M4MTUwMTIsLTUxNDA5NTcwMCwxODQ1MDQxODg1LDY0OTI5MTQy
-NiwtMTQ4MDk4ODMyMCwtNjM5NTExMDk1LDY0NjcxMjQwOSwxOD
-U1MjkxNTgsMTc1Mjc1NzkyNiwtMTc2NjcyMjg0OCw1MDc4OTc1
-NzcsNjk3MDI3NjIsLTQ4Mjc5NjkzMSwtNDc2MzI4NjE4XX0=
+eyJoaXN0b3J5IjpbMTQzODUyNjEzNiwtMTcyOTk5ODIyLC0xMj
+cyMTQxMzU5LDM1MzgxNTAxMiwtNTE0MDk1NzAwLDE4NDUwNDE4
+ODUsNjQ5MjkxNDI2LC0xNDgwOTg4MzIwLC02Mzk1MTEwOTUsNj
+Q2NzEyNDA5LDE4NTUyOTE1OCwxNzUyNzU3OTI2LC0xNzY2NzIy
+ODQ4LDUwNzg5NzU3Nyw2OTcwMjc2MiwtNDgyNzk2OTMxLC00Nz
+YzMjg2MThdfQ==
 -->
