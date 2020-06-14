@@ -5,7 +5,9 @@
 
 이런 구조로 처음 개발하거나 유지보수를 진행 중인 경우, 해당 API서버가 어떤 Spec을 가진 데이터를 주고 받는지에 대한 문서작업이 필요하다.
 예전에는 엑셀에 메소드 URI, 요청 파라미터, 응답 status code별 설명, 응답 body 등을 컬럼으로 두고 내용을 채웠었다.  하지만 이런 방식은 굉장히 시간이 많이걸리고, 매번 기능이 추가되거나 변경될때마다 작업을 따로 해줘야 하는 것은 개발자 입장에서 너무 고통스러운 일이었다. 그러다보니 API Spec 문서를 자동화는 도구들이 나오게 되었다. 
-
+- Swagger
+- Spring REST Docs
+- 
 ## Swagger
 ###  소개
 Swagger는 간단한 설정으로 프로젝트에서 지정한 URL들을 HTML 화면으로 확인할 수 있게 해주는 프로젝트로, Java뿐만 아니라 NodeJs, Python 등 다양한 언어를 지원해준다. 
@@ -27,10 +29,10 @@ Swagger는 간단한 설정으로 프로젝트에서 지정한 URL들을 HTML �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzUyODA4ODQsLTM5NTkwMjgyMiwxOD
-g5MTk1NTgsLTE3Mjk5OTgyMiwtMTI3MjE0MTM1OSwzNTM4MTUw
-MTIsLTUxNDA5NTcwMCwxODQ1MDQxODg1LDY0OTI5MTQyNiwtMT
-Q4MDk4ODMyMCwtNjM5NTExMDk1LDY0NjcxMjQwOSwxODU1Mjkx
-NTgsMTc1Mjc1NzkyNiwtMTc2NjcyMjg0OCw1MDc4OTc1NzcsNj
-k3MDI3NjIsLTQ4Mjc5NjkzMSwtNDc2MzI4NjE4XX0=
+eyJoaXN0b3J5IjpbODQ1MTIyMTU5LC0zOTU5MDI4MjIsMTg4OT
+E5NTU4LC0xNzI5OTk4MjIsLTEyNzIxNDEzNTksMzUzODE1MDEy
+LC01MTQwOTU3MDAsMTg0NTA0MTg4NSw2NDkyOTE0MjYsLTE0OD
+A5ODgzMjAsLTYzOTUxMTA5NSw2NDY3MTI0MDksMTg1NTI5MTU4
+LDE3NTI3NTc5MjYsLTE3NjY3MjI4NDgsNTA3ODk3NTc3LDY5Nz
+AyNzYyLC00ODI3OTY5MzEsLTQ3NjMyODYxOF19
 -->
