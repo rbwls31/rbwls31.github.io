@@ -7,7 +7,7 @@
 예전에는 엑셀에 메소드 URI, 요청 파라미터, 응답 status code별 설명, 응답 body 등을 컬럼으로 두고 내용을 채웠었다.  하지만 이런 방식은 아래와 같은 문제가 있다.
 
  - 변경이력 관리가 어렵다.
- - 
+ - 가독성이 나쁘다. (비슷한 endpoint끼리 묶어서 카테고리화 시키고, 설명에  테이블이나 리스트와 같은 HTML 기반의 컨텐츠를 추가하는 등의 일이 힘들다.(
 
 ### Swagger & Spring REST Docs
 
@@ -15,7 +15,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAzMTk5Mzk0LDE3NTI3NTc5MjYsLTE3Nj
-Y3MjI4NDgsNTA3ODk3NTc3LDY5NzAyNzYyLC00ODI3OTY5MzEs
-LTQ3NjMyODYxOF19
+eyJoaXN0b3J5IjpbMTYxNzAwMDI2NCwxNzUyNzU3OTI2LC0xNz
+Y2NzIyODQ4LDUwNzg5NzU3Nyw2OTcwMjc2MiwtNDgyNzk2OTMx
+LC00NzYzMjg2MThdfQ==
 -->
