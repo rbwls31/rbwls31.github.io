@@ -7,13 +7,12 @@
 예전에는 엑셀에 메소드 URI, 요청 파라미터, 응답 status code별 설명, 응답 body 등을 컬럼으로 두고 내용을 채웠었다.  하지만 이런 방식은 굉장히 시간이 많이걸리고, 매번 기능이 추가되거나 변경될때마다 작업을 따로 해줘야 하는 것은 개발자 입장에서 너무 고통스러운 일이었다. 그러다보니 API Spec 문서를 자동화는 도구들이 나오게 되었다. 
 
 ## Swagger
-
 ### 설치
 ### Lerni 적용 예제
 
-## 다른 API 문서 자동화 도구
+## Spring REST Docs
 
-### Spring REST Docs
+
 
 ## 끝맺음
 
@@ -22,7 +21,8 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzOTUxMTA5NSw2NDY3MTI0MDksMTg1NT
-I5MTU4LDE3NTI3NTc5MjYsLTE3NjY3MjI4NDgsNTA3ODk3NTc3
-LDY5NzAyNzYyLC00ODI3OTY5MzEsLTQ3NjMyODYxOF19
+eyJoaXN0b3J5IjpbLTI1Mjk4MzEzNywtNjM5NTExMDk1LDY0Nj
+cxMjQwOSwxODU1MjkxNTgsMTc1Mjc1NzkyNiwtMTc2NjcyMjg0
+OCw1MDc4OTc1NzcsNjk3MDI3NjIsLTQ4Mjc5NjkzMSwtNDc2Mz
+I4NjE4XX0=
 -->
