@@ -10,6 +10,11 @@
 
 ## Swagger
 Swagger는 NodeJs, Java, Python 등 다양한 언어를 지원해준다. 
+
+어노테이션 기반 REST API 문서 자동화
+- 대화형 API 콘솔 자동 생성
+- 소스코드 빌드시 문서 자동 생성
+- 
 ### 설치
 ### 사용법(예제코드)
 ### Lerni 적용 예제
@@ -28,7 +33,7 @@ Swagger는 NodeJs, Java, Python 등 다양한 언어를 지원해준다.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzODUyNjEzNiwtMTcyOTk5ODIyLC0xMj
+eyJoaXN0b3J5IjpbMTgyMTkxNDc1MywtMTcyOTk5ODIyLC0xMj
 cyMTQxMzU5LDM1MzgxNTAxMiwtNTE0MDk1NzAwLDE4NDUwNDE4
 ODUsNjQ5MjkxNDI2LC0xNDgwOTg4MzIwLC02Mzk1MTEwOTUsNj
 Q2NzEyNDA5LDE4NTUyOTE1OCwxNzUyNzU3OTI2LC0xNzY2NzIy
