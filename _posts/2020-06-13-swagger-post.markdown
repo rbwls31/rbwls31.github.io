@@ -1,5 +1,5 @@
 # REST API 문서 자동화 하기
-일반적으로 여러명이서 개발하는 웹 서비스에서 단일 프로젝트가 DB에서 데이터를 조회하고, 화면을 그려주고, 정보를 저정하는 등 모든 것을 담당하지 않는다. 아무리 간단한 구조라도 아래와 같은 형태정도는 유지한다.
+일반적으로 여러명이서 개발하는 웹 서비스에서 단일 프로젝트가 DB에서 데이터를 조회하고, 화면을 그려주고, 정보를 저장하는 등의 모든 것을 담당하지 않는다. 아무리 간단한 구조라도 아래와 같은 형태정도는 유지한다.
 
 ![web](https://raw.githubusercontent.com/rbwls31/rbwls31.github.io/master/images/WEB.png)
 
@@ -12,7 +12,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NTI5MTU4LDE3NTI3NTc5MjYsLTE3Nj
-Y3MjI4NDgsNTA3ODk3NTc3LDY5NzAyNzYyLC00ODI3OTY5MzEs
-LTQ3NjMyODYxOF19
+eyJoaXN0b3J5IjpbMTU3MDk5MDk1MiwxODU1MjkxNTgsMTc1Mj
+c1NzkyNiwtMTc2NjcyMjg0OCw1MDc4OTc1NzcsNjk3MDI3NjIs
+LTQ4Mjc5NjkzMSwtNDc2MzI4NjE4XX0=
 -->
