@@ -1,3 +1,4 @@
+
 # REST API 문서 자동화 하기
 일반적으로 여러명이서 개발하는 웹 서비스에서 단일 프로젝트가 DB에서 데이터를 조회하고, 화면을 그려주고, 정보를 저장하는 등의 모든 것을 담당하지 않는다. 아무리 간단한 구조라도 아래와 같은 형태정도는 유지한다.
 
@@ -9,9 +10,31 @@
 - Spring REST Docs
 
 ## Swagger
-### 소개
 Swagger는 간단한 설정으로 프로젝트에서 지정한 URL들을 HTML 화면으로 확인할 수 있게 해주는 프로젝트로, Java뿐만 아니라 NodeJs, Python 등 다양한 언어를 지원해준다. 
-### 설치
+> 이번 세션에서 소개하는 내용은 Spring 기반의 실습니다.
+### 1. 의존성 추가
+Spring에서는 Swagger2 명세서의 구현체인 Springfox를 제공한다.
+
+- maven
+	````
+	<dependency>
+	<groupId>io.springfox</groupId>
+	<artifactId>springfox-swagger2</artifactId>
+	<version>2.9.2</version>
+	</dependency>
+
+	<dependency>
+	<groupId>io.springfox</groupId>
+	<artifactId>springfox-swagger-ui</artifactId>
+	<version>2.9.2</version>
+	</dependency>
+	````
+- gradle
+	````
+	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+	````
+ ### 2. Swagg
 ### Lerni 적용 예제
 
 ## Spring REST Docs
