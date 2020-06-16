@@ -16,7 +16,6 @@ Swagger는 간단한 설정으로 프로젝트에서 지정한 URL들을 HTML �
 ---
 ### 1. 의존성 추가
 maven pom.xml
-	- Spring은 Swagger2 명세서의 구현체인 Springfox를 제공한다.
 ```
 <dependency>
 <groupId>io.springfox</groupId>
@@ -31,7 +30,7 @@ maven pom.xml
 </dependency>
 ```
 ---	
- ### 2. Swagger 설정
+### 2. Config 설정
  Swagger 설정을 위해 SwaggerConfig 클래스를 생성한다.
  
  ```java
@@ -93,8 +92,101 @@ public class SwaggerConfig {
 	 - web ui에서 api문서를 정렬하기 위해 사용
  - consumes(), produces()
 	 - Request Content-Type, Response Content-Type에 대한 설정
- - 
 ---
+### 3. 어노테이션 기반 API 명세
+- @Api
+	- 해당 클래스가 Swagger 리소스라는 것을 명시
+		- value
+			- 태그 작성
+		- tags
+			- 여러개의 태그를 정의
+- @ApiOperation
+	- API URL과 Method 선언
+		- value
+			- API에 대한 간략한 설명
+		- notes
+			- 상세 설명	
+- @ApiParm
+	- 파라미터에 대한 정보 명시
+		- value
+			- 파라미터명
+		- required
+			- 필수 여부
+		- example
+			- 파라미터값 예시
+```java
+@Api(tags = {TAG_EVENT_BY_USER})  
+@RestController  
+@RequestMapping("events")  
+public class EventUserController {  
+  
+  private EventService eventService;  
+ private SessionProvider sessionProvider;  
+ public EventUserController(EventService eventService, SessionProvider sessionProvider) {  
+  this.eventService = eventService;  
+ this.sessionProvider = sessionProvider;  
+  }  
+  
+  @ApiOperation(value = "이벤트 생성")  
+  @PostMapping("")  
+  @ResponseStatus(code = HttpStatus.CREATED)  
+  public void createEvent(@RequestBody CreateEventRequest createEventRequest) {  
+  eventService.createEventAndDefaultProgramAndSampleActivityAndParticipantManager(createEventRequest, sessionProvider.getSessionUser().getId());  
+  }  
+  
+  @ApiOperation(value = "이벤트 정보 조회")  
+  @GetMapping("{eventId}")  
+  @ResponseStatus(code = HttpStatus.OK)  
+  public EventInformationResponse retrieveEvent(@ApiParam(value= "이벤트 id", required = true) @PathVariable String eventId) {  
+	  return eventService.retrieveEvent(eventId);  
+  }  
+}
+```
+- @ApiModel
+	- VO, DTO, Entity 등 모델에서 사용
+		- value
+			- 모델 이름을 지정
+		- description
+			- 상세 설명
+- @ApiModelProperty
+	- 모델 내의 필드를 설명
+		- value
+			- 필드 이름
+		- required
+			- 필수 여부
+		- example
+			- 필드값 예시
+		- hidden
+			- 필드 숨김 여부
+```java
+@Getter @Setter  
+@ApiModel(value = "이벤트 생성", description = "이벤트 생성 요청 객체")  
+public class CreateEventRequest {  
+  //  
+  @ApiModelProperty(value = "이벤트 제목", required = true)  
+  @NotBlank(message = ValidatorMessage.EVENT_TITLE_BLANK_ERR)  
+  private String title;  
+  
+  @ApiModelProperty(value = "이벤트 시작 일자", required = true)  
+  @JsonFormat(pattern = "yyyy-MM-dd")   
+  @NotNull(message = ValidatorMessage.EVENT_START_DATE_TIME_BLANK_ERR)  
+  private LocalDate startDate;  
+  @ApiModelProperty(value = "이벤트 종료 일자", required = true)    
+  @JsonFormat(pattern = "yyyy-MM-dd")  
+  @NotNull(message = ValidatorMessage.EVENT_END_DATE_TIME_BLANK_ERR)
+  private LocalDate endDate;  
+  
+  @ApiModelProperty(value = "이벤트 시작 시간", required = true)    
+  @JsonFormat(pattern = "HH:mm")  
+  @NotNull(message = ValidatorMessage.EVENT_START_DATE_TIME_BLANK_ERR)  
+  private LocalTime startTime;  
+  @ApiModelProperty(value = "이벤트 종료 시간", required = true) 
+  @JsonFormat(pattern = "HH:mm")   
+  @NotNull(message = ValidatorMessage.EVENT_END_DATE_TIME_BLANK_ERR)  
+  private LocalTime endTime;   
+}
+```
+
 ## Spring REST Docs
 ### 소개
 ### 설치
