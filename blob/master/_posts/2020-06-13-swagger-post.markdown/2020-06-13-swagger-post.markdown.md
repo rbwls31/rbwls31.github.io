@@ -9,6 +9,8 @@
 - Swagger
 - Spring REST Docs
 
+> 이번 세션에서 소개하는 내용은 Spring 기반의 실습니다.
+
 ## Swagger
 Swagger는 간단한 설정으로 프로젝트에서 지정한 URL들을 HTML 화면으로 확인할 수 있게 해주는 프로젝트로, Java뿐만 아니라 NodeJs, Python 등 다양한 언어를 지원해준다. 
 ### 설치
@@ -38,5 +40,6 @@ OF19
 -->
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4OTE5OTY3OCwtMTgwMDEwODEyN119
+eyJoaXN0b3J5IjpbMzAwNTY3MTgxLC03ODkxOTk2NzgsLTE4MD
+AxMDgxMjddfQ==
 -->
