@@ -11,32 +11,90 @@
 
 ## Swagger
 Swagger는 간단한 설정으로 프로젝트에서 지정한 URL들을 HTML 화면으로 확인할 수 있게 해주는 프로젝트로, Java뿐만 아니라 NodeJs, Python 등 다양한 언어를 지원해준다. 
-> 이번 세션에서 소개하는 내용은 Spring 기반의 실습니다.
+
+> 아래의 내용은 솔루션 연구팀에서 개발하고 있는 행사 플랫폼(Lerni)에 실제 적용한 코드를 기반으로 작성하였다.
+---
 ### 1. 의존성 추가
-Spring에서는 Swagger2 명세서의 구현체인 Springfox를 제공한다.
+maven pom.xml
+	- Spring은 Swagger2 명세서의 구현체인 Springfox를 제공한다.
+```
+<dependency>
+<groupId>io.springfox</groupId>
+<artifactId>springfox-swagger2</artifactId>
+<version>2.9.2</version>
+</dependency>
 
-- maven
-	````
-	<dependency>
-	<groupId>io.springfox</groupId>
-	<artifactId>springfox-swagger2</artifactId>
-	<version>2.9.2</version>
-	</dependency>
-
-	<dependency>
-	<groupId>io.springfox</groupId>
-	<artifactId>springfox-swagger-ui</artifactId>
-	<version>2.9.2</version>
-	</dependency>
-	
-- gradle
-	````
-	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
-	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
-	
-### 2. Swagg
-### Lerni 적용 예제
-
+<dependency>
+<groupId>io.springfox</groupId>
+<artifactId>springfox-swagger-ui</artifactId>
+<version>2.9.2</version>
+</dependency>
+```
+---	
+ ### 2. Swagger 설정
+ Swagger 설정을 위해 SwaggerConfig 클래스를 생성한다.
+ 
+ ```java
+@Configuration  
+@EnableSwagger2  
+public class SwaggerConfig {  
+  
+  private static final String VERSION = "2.0";  
+  
+  @Bean  
+  public Docket api() {  
+  return new Docket(DocumentationType.SWAGGER_2)  
+  .select()  
+  .apis(RequestHandlerSelectors.any())  
+  .paths(Predicates.not(PathSelectors.regex("/error.*")))  
+  .paths(Predicates.not(PathSelectors.regex("/actuator.*")))  
+  .build()  
+  .useDefaultResponseMessages(false)  
+  .apiInfo(apiInfo())  
+  .tags(API_USER_ACCOUNT, API_USER_BY_USER)  
+  .tags(API_ROLE_USER, API_ANY_AUTH, API_NO_AUTH)  
+  .tags(API_EVENT_BY_USER, API_EVENT_BY_MANAGER)  
+  .produces(Sets.newHashSet(MediaType.APPLICATION_JSON_VALUE))
+  .consumes(Sets.newHashSet(MediaType.APPLICATION_JSON_VALUE));
+  }  
+  
+  private ApiInfo apiInfo() {  
+  String applicationName = "LERNI";  
+  String applicationUrl = "https://app.lerni.kr/rest";  
+  String description = "API Document";  
+  Contact contact = new Contact(applicationName, applicationUrl, "admin@lerni.net");  
+  String license = "";  
+  String licenseUrl = applicationUrl;  
+  
+ return new ApiInfoBuilder()  
+  .title(applicationName)  
+  .termsOfServiceUrl(applicationUrl)  
+  .description(description)  
+  .contact(contact)  
+  .license(license)  
+  .licenseUrl(licenseUrl)  
+  .version(VERSION)  
+  .build();  
+  }
+  ```
+ - select()
+	 - ApiSelectBuilder 생성
+ - apis()
+	 - api 스펙이 작성되어 있는 패키지 지정
+	 - RequestHandlerSelectors.any()는 프로젝트의 전체 API를 지정
+ - paths()
+	 - api()로 선택되어진 API중 특정 path 조건에 맞는 API들을 필터링
+ - useDefaultResponseMessages()
+	 - false로 설정하면, Swagger에서 제공해주는 응답코드(200, 401, 403, 404)에 대한 기본 메시지 제거
+	 - 불필요한 응답코드와 메시지를 제거하기 위함이며, 컨트롤러에서 명시해 줌
+  - apiInfo()
+	 - Swagger API 문서에 대한 설명을 표기
+ - tags()
+	 - web ui에서 api문서를 정렬하기 위해 사용
+ - consumes(), produces()
+	 - Request Content-Type, Response Content-Type에 대한 설정
+ - 
+---
 ## Spring REST Docs
 ### 소개
 ### 설치
