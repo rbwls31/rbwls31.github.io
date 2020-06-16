@@ -28,13 +28,13 @@ Spring에서는 Swagger2 명세서의 구현체인 Springfox를 제공한다.
 	<artifactId>springfox-swagger-ui</artifactId>
 	<version>2.9.2</version>
 	</dependency>
-	````
+	
 - gradle
 	````
 	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
 	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
-	````
- ### 2. Swagg
+	
+### 2. Swagg
 ### Lerni 적용 예제
 
 ## Spring REST Docs
