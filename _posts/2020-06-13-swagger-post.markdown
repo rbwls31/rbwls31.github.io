@@ -11,9 +11,8 @@
 
 ## Swagger
 Swagger는 간단한 설정으로 프로젝트에서 지정한 URL들을 HTML 화면으로 확인할 수 있게 해주는 프로젝트로, Java뿐만 아니라 NodeJs, Python 등 다양한 언어를 지원해준다. 
-
 > 아래의 내용은 솔루션 연구팀에서 개발하고 있는 행사 플랫폼(Lerni)에 실제 적용한 코드를 기반으로 작성하였다.
----
+
 ### 1. 의존성 추가
 maven pom.xml
 ```
@@ -96,24 +95,17 @@ public class SwaggerConfig {
 ### 3. 어노테이션 기반 API 명세
 - @Api
 	- 해당 클래스가 Swagger 리소스라는 것을 명시
-		- value
-			- 태그 작성
-		- tags
-			- 여러개의 태그를 정의
+		- value : 태그 작성
+		- tags : 여러개의 태그를 정의
 - @ApiOperation
 	- API URL과 Method 선언
-		- value
-			- API에 대한 간략한 설명
-		- notes
-			- 상세 설명	
+		- value : API에 대한 간략한 설명
+		- notes : 상세 설명	
 - @ApiParm
-	- 파라미터에 대한 정보 명시
-		- value
-			- 파라미터명
-		- required
-			- 필수 여부
-		- example
-			- 파라미터값 예시
+	- API 호출 시 전달되는 파라미터에 대한 정보 명시
+		- value : 파라미터명
+		- required : 필수 여부
+		- example : 파라미터값 예시
 ```java
 @Api(tags = {TAG_EVENT_BY_USER})  
 @RestController  
@@ -137,27 +129,21 @@ public class EventUserController {
   @ApiOperation(value = "이벤트 정보 조회")  
   @GetMapping("{eventId}")  
   @ResponseStatus(code = HttpStatus.OK)  
-  public EventInformationResponse retrieveEvent(@ApiParam(value= "이벤트 id", required = true) @PathVariable String eventId) {  
+  public EventInformationResponse retrieveEvent(@PathVariable String eventId) {  
 	  return eventService.retrieveEvent(eventId);  
   }  
 }
 ```
 - @ApiModel
 	- VO, DTO, Entity 등 모델에서 사용
-		- value
-			- 모델 이름을 지정
-		- description
-			- 상세 설명
+		- value : 모델 이름을 지정
+		- description : 상세 설명
 - @ApiModelProperty
 	- 모델 내의 필드를 설명
-		- value
-			- 필드 이름
-		- required
-			- 필수 여부
-		- example
-			- 필드값 예시
-		- hidden
-			- 필드 숨김 여부
+		- value : 필드 이름
+		- required : 필수 여부
+		- example : 필드값 예시
+		- hidden : 필드 숨김 여부
 ```java
 @Getter @Setter  
 @ApiModel(value = "이벤트 생성", description = "이벤트 생성 요청 객체")  
@@ -186,11 +172,16 @@ public class CreateEventRequest {
   private LocalTime endTime;   
 }
 ```
+### 4. web-ui
+SwaggerConfig에서 설정한 tag 순서로 API들이 정렬된다.
+![web](https://raw.githubusercontent.com/rbwls31/rbwls31.github.io/master/images/swagger-ui-main.PNG)
+Controller에서 설정한  @Api tag들이 매핑되어 보여진다. 
+![web](https://raw.githubusercontent.com/rbwls31/rbwls31.github.io/master/images/swagger-ui-api.PNG)
 
 ## Spring REST Docs
 ### 소개
-### 설치
 ### 사용법(예제코드)
+### UI
 
 ## Swagger vs Spring REST Docs
 
